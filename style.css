@@ -1,0 +1,23 @@
+.jumbotron{
+    padding-top: 2rem;
+    background-color: #bb3535;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.about-me{
+    padding-top: 2rem;
+    background-color: #bb3535;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(252, 250, 250);
+}
+
+#Hobby{
+    padding-top: 2rem;
+    background-color: #bb3535;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(252, 250, 250);
+}
