@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>www.PortofolioBintang</title>
+</head>
+<body id="Home">
+  <link rel="stylesheet" href="style.css">
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(143, 17, 17);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PortTang</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-underline ms-auto ">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#about">about </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#Hobby">Hobby</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#Contact">Contact</a>
+  </li>
+  
+</ul>
+    </div>
+  </div>
+</nav>
+
+<!-- End Navbar -->
+<!--Tanggal dan Waktu-->
+    <div style="background-color: rgb(231, 205, 193); text-align: center; padding: 3px;">
+        <span id="waktu" ></span>
+  <script>
+    function tampilkanWaktu() {
+        var sekarang = new Date();
+        var hari = sekarang.getDate();
+        var bulan = sekarang.getMonth() + 1; // Bulan dimulai dari 0
+        var tahun = sekarang.getFullYear();
+        var jam = sekarang.getHours();
+        var menit = sekarang.getMinutes();
+        var detik = sekarang.getSeconds();
+
+        // Format waktu dengan menambahkan nol di depan angka kurang dari 10
+        if (jam < 10) jam = "0" + jam;
+        if (menit < 10) menit = "0" + menit;
+        if (detik < 10) detik = "0" + detik;
+
+        var waktu = hari + "/" + bulan + "/" + tahun + " " + jam + ":" + menit + ":" + detik;
+
+        document.getElementById("waktu").innerHTML = waktu;
+    }
+
+    // Memperbarui waktu setiap detik
+    setInterval(tampilkanWaktu, 1000);
+</script>
+<!--End Tanggal dan Waktu-->
+<!--jumbotron-->
+<section class="jumbotron text-center">
+  
+    <img src="foto m bintang .jpg" alt="" width="400" height="400" class="rounded-circle">
+    <h1 class="display-4">Muhammad Bintang Akbar Zaelani</h1>
+    <p class="lead">Fullstack Developer | Desain Graphic | Videography</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,96L30,101.3C60,107,120,117,180,117.3C240,117,300,107,360,101.3C420,96,480,96,540,85.3C600,75,660,53,720,80C780,107,840,181,900,197.3C960,213,1020,171,1080,170.7C1140,171,1200,213,1260,202.7C1320,192,1380,128,1410,96L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+
+
+</section>
+<!--end jumbotron-->
+
+<!--about me-->
+<section id="about" style="background-color: #f9fafa;">
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2>about me</h2>
+    </div>
+  </div>
+  </div>
+    <p class="lead">Halo! Nama saya Muhammad Bintang Akbar Zaelani, Saya adalah Fullstack Developer dengan ketertarikan kuat pada Graphic Design dan Video Graphic. Terbiasa membangun aplikasi web dari sisi frontend hingga backend, sekaligus merancang tampilan yang modern, fungsional, dan user-friendly.
+
+Dengan kombinasi kemampuan teknis dan kreativitas visual, saya fokus menciptakan produk digital yang tidak hanya berjalan dengan baik, tetapi juga memiliki nilai estetika dan pengalaman pengguna yang optimal. Saya selalu terbuka untuk belajar teknologi baru dan mengeksplorasi visual storytelling dalam setiap proyek yang dikerjakan.</p>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,96L30,101.3C60,107,120,117,180,117.3C240,117,300,107,360,101.3C420,96,480,96,540,85.3C600,75,660,53,720,80C780,107,840,181,900,197.3C960,213,1020,171,1080,170.7C1140,171,1200,213,1260,202.7C1320,192,1380,128,1410,96L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+  
+</section>
+<!-- End about me-->
+
+<!-- Pengalaman -->
+<section id="Hobby"style= Background-color: #f3f4f5;>
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2>Hobby</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+     <div class="card" >
+      <img src="Screenshot 2025-10-29 232846.png" class="card-img-top" alt="..." width="200" height="200">
+       <div class="card-body">
+    <p class="card-text">Moment Kawah Ratu</p>
+  </div>
+</div>
+      </div>
+
+      <div class="col-4">
+     <div class="card" >
+      <img src="Screenshot 2025-10-29 232944.png" class="card-img-top" alt="..." width="200" height="200">
+       <div class="card-body">
+    <p class="card-text">Moment Liburan Ke Malioboro.</p>
+  </div>
+</div>
+      </div>
+
+<div class="col-4">
+     <div class="card" >
+      <img src="Screenshot 2025-10-29 232811.png" class="card-img-top" alt="..." width="200" height="200">
+       <div class="card-body">
+        <p class="card-text">Moment Liburan Ke Gunung Gede.</p>
+      </div>
+</div>
+</div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="100%" d="M0,256L48,234.7C96,213,192,171,288,154.7C384,139,480,149,576,176C672,203,768,245,864,266.7C960,288,1056,288,1152,261.3C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section> 
+    
+  
+<!-- End Pengalaman -->
+
+<!-- Contact -->
+
+<section id="Contact" style="background-color: #f3f4f5;">
+<div class="container">
+    <div class="row  text-center mb-3">
+      <div class="col">
+        <h2>Contact</h2>
+      </div>
+    </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+<form>
+  <div class="mb-3 ">
+    <label for="Name" class="form-label">Nama Lengkap</label>
+    <input type="text" class="form-control" id="Name" aria-describedby="Name">
+    
+  <div class="mb-3">
+    <label for="email" class="form-label">Masukkan Email</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="mb-3">
+    <label for="Pesan" class="form-label">Pesan</label>
+    <textarea class="form-control" id="Pesan" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Kirim</button>
+</form>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+ <!-- End Contact -->
+  <!-- Footer -->
+  <footer class="text-center p-4" style="background-color: rgb(143, 17, 17); color: white;">
+    <a href="https://www.facebook.com/bintang.akbar.7540"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/muhammadbintangakbarzaelani._/" ><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/muhammad-bintang-56b679363/" ><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://github.com/jualan467-cmyk" ><i class="fab fa-github"></i></a>
+    <p>&copy; 2024 Muhammad Bintang Akbar Zaelani. 271011701242-01SIFP016 All rights reserved.</p>
+  </footer>
+  <!-- End Footer -->  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
